@@ -64,6 +64,8 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
+        config-file: ylopo-it/security-team-codeql-config/codeql/codeql-config.yml
+ external-repository-token: ${{ secrets.ACCESS_TOKEN }}
         config: |
           paths-ignore:
             - '**/*.test.js'
