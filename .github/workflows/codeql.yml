@@ -67,7 +67,7 @@ jobs:
         config: |
           paths-ignore:
             - '**/*.test.js'
-            queries:
+          queries:
             - uses: security-and-quality
         build-mode: ${{ matrix.build-mode }}
         # If you wish to specify custom queries, you can do so here or in a config file.
