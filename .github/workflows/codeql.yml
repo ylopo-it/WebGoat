@@ -8,7 +8,6 @@
 # We have attempted to detect the languages in your repository. Please check
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
-#
 name: "CodeQL"
 
 on:
@@ -65,7 +64,7 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         config-file: ylopo-it/security-team-codeql-config/codeql/codeql-config.yml
- external-repository-token: ${{ secrets.ACCESS_TOKEN }}
+        external-repository-token: ${{ secrets.ACCESS_TOKEN }}
         config: |
           paths-ignore:
             - '**/*.test.js'
